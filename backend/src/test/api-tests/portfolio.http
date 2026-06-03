@@ -1,0 +1,39 @@
+### Get My Portfolio (need token from login first)
+GET http://localhost:8080/api/portfolio/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc2hhbmthQGdtYWlsLmNvbSIsImlhdCI6MTc4MDQ3Mjg5NiwiZXhwIjoxNzgwNTU5Mjk2fQ.7StwO-bQGdVU1PgsCrhSIufX7jlOqQZkqIdiy2OVDGE
+
+### Update Portfolio
+PUT http://localhost:8080/api/portfolio/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc2hhbmthQGdtYWlsLmNvbSIsImlhdCI6MTc4MDQ3Mjg5NiwiZXhwIjoxNzgwNTU5Mjk2fQ.7StwO-bQGdVU1PgsCrhSIufX7jlOqQZkqIdiy2OVDGE
+Content-Type: application/json
+
+{
+  "headline": "Full Stack Developer",
+  "bio": "Passionate software engineering student",
+  "githubUrl": "https://github.com/ishanka",
+  "linkedinUrl": "https://linkedin.com/in/ishanka",
+  "templateType": "MINIMAL"
+}
+
+### Add Skill
+POST http://localhost:8080/api/skills
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc2hhbmthQGdtYWlsLmNvbSIsImlhdCI6MTc4MDQ3Mjg5NiwiZXhwIjoxNzgwNTU5Mjk2fQ.7StwO-bQGdVU1PgsCrhSIufX7jlOqQZkqIdiy2OVDGE
+Content-Type: application/json
+
+{
+  "name": "Spring Boot",
+  "category": "BACKEND",
+  "level": "INTERMEDIATE"
+}
+
+### Add Project
+POST http://localhost:8080/api/projects
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc2hhbmthQGdtYWlsLmNvbSIsImlhdCI6MTc4MDQ3Mjg5NiwiZXhwIjoxNzgwNTU5Mjk2fQ.7StwO-bQGdVU1PgsCrhSIufX7jlOqQZkqIdiy2OVDGE
+Content-Type: application/json
+
+{
+  "title": "Portfolio Platform",
+  "description": "An AI-powered portfolio builder",
+  "technologies": ["React", "Spring Boot", "PostgreSQL"],
+  "isFeatured": true
+}
